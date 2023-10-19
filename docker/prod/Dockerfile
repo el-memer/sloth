@@ -33,3 +33,4 @@ FROM gcr.io/distroless/static:debug-nonroot-${ARCH}
 COPY --from=build-stage /src/bin/sloth /usr/local/bin/sloth
 
 ENTRYPOINT ["/usr/local/bin/sloth"]
+
